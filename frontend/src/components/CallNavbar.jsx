@@ -5,6 +5,7 @@ const CallNavbar = () => {
     <nav className='p-4 shadow-lg shadow-[#e7e9ec]'>
       <ul className='flex flex-col justify-center items-center'>
         <li className='text-xl font-semibold'>Mock Interview on Java</li>
+        {/* <li className=''>Interviewer - Samar Jain</li> */}
       </ul>
     </nav>
   )

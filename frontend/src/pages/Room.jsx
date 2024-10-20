@@ -12,7 +12,8 @@ uuidv4();
 const API_URL = import.meta.env.VITE_API_URL;
 
 const socket = io.connect(`${API_URL}`, {
-  transports: ["websocket"],
+  transports: ["websocket", "polling"],
+  withCredentials: true,
 });
 
 const Room = () => {
@@ -62,8 +63,8 @@ const Room = () => {
     if (audioTrack) {
       audioTrack.enabled = !audioTrack.enabled; // Toggle audio track
       myAudio.current.firstChild.src = audioTrack.enabled
-        ? "../src/assets/mic.png"
-        : "../src/assets/no-noise.png";
+        ? "./mic.png"
+        : "./no-noise.png";
     }
   };
 
