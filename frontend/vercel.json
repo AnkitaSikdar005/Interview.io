@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "https://interview-coach.onrender.com/api/$1"
+      "source": "/api/v1/(.*)",
+      "destination": "https://interview-coach.onrender.com/api/v1/$1"
     },
     {
       "source": "/(.*)",
