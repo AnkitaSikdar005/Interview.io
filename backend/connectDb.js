@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+const { ENV_VARS } = require('./config/envVar.js');
 
-const mongoURI = "mongodb://localhost:27017/Rooms";
+const mongoURI = ENV_VARS.MONGODB_URI;
 
 const connectToMongo = async () => {
     try {
