@@ -58,7 +58,7 @@ const Dashboard = () => {
             {/* Interview Image Section */}
             <div className="interview-image-section">
               <img
-                src="freepik__upload__17472.jpeg"
+                src="./freepik__upload__17472.jpeg"
                 alt="Interview Illustration"
               />
             </div>

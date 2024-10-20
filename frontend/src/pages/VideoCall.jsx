@@ -9,7 +9,8 @@ import { useStore } from "../store/store.js";
 const API_URL = import.meta.env.VITE_API_URL;
 
 const socket = io.connect(`${API_URL}`, {
-  transports: ["websocket"],
+  transports: ["websocket", "polling"],
+  withCredentials: true,
 });
 
 const VideoCall = () => {
@@ -189,8 +190,8 @@ const VideoCall = () => {
     if (audioTrack) {
       audioTrack.enabled = !audioTrack.enabled; // Toggle audio track
       myVoice.current.firstChild.src = audioTrack.enabled
-        ? "../src/assets/mic.png"
-        : "../src/assets/no-noise.png";
+        ? "./mic.png"
+        : "./no-noise.png";
     }
 
     if (audioTrack.enabled == false) {

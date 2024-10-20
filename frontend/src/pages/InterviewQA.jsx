@@ -4,6 +4,7 @@ import axios from 'axios';
 import { marked } from 'marked';
 import Sidebar from '../components/Sidebar'
 import Chatbot from '../components/Chatbot.jsx'
+const API_URL = import.meta.env.VITE_API_URL;
 
 const InterviewQA = () => {
     const [techstack, setTechstack] = useState('');
@@ -17,7 +18,7 @@ const InterviewQA = () => {
         e.preventDefault();
         setLoading(true);
         try {
-            const response = await axios.post(`http://localhost:3000/api/v1/questions/generate-questions`, {
+            const response = await axios.post(`${API_URL}/api/v1/questions/generate-questions`, {
                 techstack,
                 qty,
                 difficulty

@@ -6,7 +6,8 @@ import { useStore } from "../store/store.js";
 const API_URL = import.meta.env.VITE_API_URL;
 
 const socket = io.connect(`${API_URL}`, {
-  transports: ["websocket"],
+  transports: ["websocket", "polling"],
+  withCredentials: true,
 });
 
 const Chat = () => {
