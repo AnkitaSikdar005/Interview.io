@@ -106,14 +106,14 @@ const Room = () => {
         ref={myAudio}
         className="absolute transition text-white rounded-full p-3 bg-gray-300 left-80 bottom-32 mx-10"
       >
-        <img src="../src/assets/no-noise.png" alt="mic" className="w-7" />
+        <img src="./no-noise.png" alt="mic" className="w-7" />
       </button>
       <button
         onClick={handleVideo}
         ref={myVideo}
         className="absolute transition text-white rounded-full p-3 bg-gray-300 left-96 bottom-32 mx-12"
       >
-        <img src="../src/assets/no-video.png" alt="no-video" className="w-7" />
+        <img src="./no-video.png" alt="no-video" className="w-7" />
       </button>
 
       <section className="text-gray-600 body-font">

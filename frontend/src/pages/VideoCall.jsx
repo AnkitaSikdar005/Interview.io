@@ -209,8 +209,8 @@ const VideoCall = () => {
     if (videoTrack) {
       videoTrack.enabled = !videoTrack.enabled; // Toggle video track
       videoRef.current.firstChild.src = videoTrack.enabled
-        ? "../src/assets/video-camera.png"
-        : "../src/assets/no-video.png";
+        ? "./video-camera.png"
+        : "./no-video.png";
     }
   };
 
@@ -291,14 +291,14 @@ const VideoCall = () => {
             onClick={handleVoice}
             className=" transition text-white rounded-full p-3"
           >
-            <img src="../src/assets/no-noise.png" alt="mic" className="w-7" />
+            <img src="./no-noise.png" alt="mic" className="w-7" />
           </button>
           <button
             ref={videoRef}
             onClick={handleVideo}
             className=" transition text-white rounded-full p-3"
           >
-            <img src="../src/assets/no-video.png" alt="video" className="w-7" />
+            <img src="./no-video.png" alt="video" className="w-7" />
           </button>
 
           {!isSharing ? (
