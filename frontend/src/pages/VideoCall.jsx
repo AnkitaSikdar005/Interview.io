@@ -263,7 +263,7 @@ const VideoCall = () => {
             <img
               ref={hiddenVoice}
               className="absolute right-0 top-0 bg-gray-500 bg-opacity-60 text-white px-2 py-1 rounded w-[50px]"
-              src="../src/assets/no-noise.png"
+              src="./no-noise.png"
               alt=""
             />
             <video
@@ -361,7 +361,7 @@ const Video = ({ peer }) => {
         width={450}
         className="rounded-lg h-auto"
       />
-       <img ref={hiddenPeerVoice} className='absolute top-2 left-2 bg-gray-500 bg-opacity-60 text-white px-2 py-1 rounded w-[50px]' src="../src/assets/no-noise.png" alt="" />
+       <img ref={hiddenPeerVoice} className='absolute top-2 left-2 bg-gray-500 bg-opacity-60 text-white px-2 py-1 rounded w-[50px]' src="./no-noise.png" alt="" />
       <div className="absolute bottom-2 left-2 bg-black bg-opacity-50 text-white px-2 py-1 rounded">
         Peer
       </div>
