@@ -95,6 +95,8 @@ This projects has been made by all of our collaborators of **Team Codeblooded** 
    NODE_ENV=development
    PORT=3000 
    ```
+    Format also present in the frontend folder in the file [.env.example.frontend](./backend/.env.example.backend)
+    <br>
 
 4. Start the server:
    ```bash
