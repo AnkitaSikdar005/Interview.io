@@ -28,7 +28,7 @@ This projects has been made by all of our collaborators of **Team Codeblooded** 
 - **AI Integration**: Google Gemini API 🧠
 - **Testing**: Postman 📮
 - **Deployment** - Vercel & Render 🚀
-- **Socket.io**
+- **Socket.io** - For the chat and video calling functionalities
 
 ## 🚀 Getting Started Locally
 
