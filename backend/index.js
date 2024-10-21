@@ -16,10 +16,7 @@ const socketIO = require("socket.io"); // Import socket.io
 // Initialize socket.io on the same server
 const io = socketIO(server, {
   cors: {
-    origin: ["http://localhost:5173",
-      "https://interview-io-six.vercel.app",
-    ], // Your frontend URL
-    methods: ["GET", "POST"],
+
     credentials: true,
   },
   transports: ["websocket"], // Only use WebSockets
@@ -31,7 +28,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+
     credentials: true,
   })
 );
