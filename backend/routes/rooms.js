@@ -1,9 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const Room = require("../models/Room")
+const Room = require("../models/Room.js");
+const connectToMongo = require("../connectDb.js")
 
 router.post("/addroom/:roomID", async (req, res) => {
     try {
+        await connectToMongo();
+
         const { roomID } = req.params;
         const room = new Room({ roomID });
         const savedRoom = await room.save();
@@ -18,6 +21,8 @@ router.post("/addroom/:roomID", async (req, res) => {
 
 router.post("/deleteroom/:roomID", async (req, res) => {
     try {
+        await connectToMongo();
+
         const { roomID } = req.params;
         const room = await Room.deleteMany({ roomID });
         res.json({message: "Room deleted successfully", room});
@@ -30,6 +35,8 @@ router.post("/deleteroom/:roomID", async (req, res) => {
 
 router.get("/getroom/:roomID", async (req, res) => {
     try {
+        await connectToMongo();
+
         const { roomID } = req.params;
         const room = await Room.findOne({ roomID });
         res.json({message: "Room found", room});
