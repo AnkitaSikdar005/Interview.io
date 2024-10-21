@@ -75,7 +75,7 @@ const Room = () => {
         if(videoTrack.enabled){
             videoTrack.enabled = false;
             videoTrack.stop();
-            myVideo.current.firstChild.src = '../src/assets/no-video.png'
+            myVideo.current.firstChild.src = './no-video.png'
         }
         else{
            await navigator.mediaDevices.getUserMedia({ video: true, audio: true })
@@ -86,7 +86,7 @@ const Room = () => {
             console.log(err)
            })
            videoTrack.enabled = true;
-           myVideo.current.firstChild.src = '../src/assets/video-camera.png'
+           myVideo.current.firstChild.src = './video-camera.png'
         }
     }
   };
