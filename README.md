@@ -28,6 +28,7 @@ This projects has been made by all of our collaborators of **Team Codeblooded** 
 - **AI Integration**: Google Gemini API 🧠
 - **Testing**: Postman 📮
 - **Deployment** - Vercel & Render 🚀
+- **Socket.io** - For the chat and video calling functionalities 💬
 
 ## 🚀 Getting Started Locally
 
@@ -95,6 +96,8 @@ This projects has been made by all of our collaborators of **Team Codeblooded** 
    NODE_ENV=development
    PORT=3000 
    ```
+    Format also present in the backend folder in the file [.env.example.backend](./backend/.env.example.backend)
+    <br>
 
 4. Start the server:
    ```bash
