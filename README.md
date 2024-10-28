@@ -20,6 +20,12 @@ This projects has been made by all of our collaborators of **Team Codeblooded** 
 
 - 🚀 **Future Enhancements:** Planned future improvements include a real-time notification system, enhanced quiz security, video call functionality that supports more participants, and better integration between the overview page and upcoming interviews.
 
+  ## Members of our Team Codeblooded 👥😎
+- **Abhrajit Gupta** - [@abhrajitgupta](https://github.com/abhrajit2004)
+- **Shuvadipta Das** - [@shuvadiptadas](https://github.com/5h0ov)
+- **Ankita Sikdar**  - [@ankitasikdar](https://github.com/AnkitaSikdar005) (myself😊🤞)
+- **Megha Karmakar** - [@meghakarmakar](https://github.com/meghakarmakar)
+
 ## 🛠️ Tech Stack
 
 - **Frontend**: Vite ReactJs ⚛️, Tailwind CSS 🎨, Tailwind 🔄, SCSS 🎭
