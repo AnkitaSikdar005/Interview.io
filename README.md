@@ -126,7 +126,7 @@ This project has been made by all of our collaborators of **Team Codeblooded** &
 - `POST /api/v1/questions/generate-questions`: Generate questions for a quiz
 - `POST /api/v1/questions/chat`: Interact with AI chatbot
   
-## 👥😎Members of our Team Codeblooded 
+## 😎 Members of our Team Codeblooded 👥
 - **Abhrajit Gupta** - [@abhrajitgupta](https://github.com/abhrajit2004)
 - **Shuvadipta Das** - [@shuvadiptadas](https://github.com/5h0ov)
 - **Ankita Sikdar**  - [@ankitasikdar](https://github.com/AnkitaSikdar005)
