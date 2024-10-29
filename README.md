@@ -2,9 +2,12 @@
 
 The project **"AI-Powered Real-Time Interview Coach"** is an innovative virtual platform designed to help users improve their interview skills through a range of interactive and AI-driven features.
 
-This projects has been made by all of our collaborators of **Team Codeblooded** & has been submitted for **HackOdisha'24**.
+This project has been made by all of our collaborators of **Team Codeblooded** & has been submitted for **HackOdisha'24**.
 
 ## 🚀 Live here - https://interview-io-six.vercel.app/
+
+## **🏆 This project has won 1st Place in HackOdisha 2k24!!**
+
 
 ## 🌟 Features
 
