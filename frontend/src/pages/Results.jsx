@@ -74,28 +74,6 @@ const Results = () => {
             console.log(response.data.quiz.chosen_answers);
             setChosenAnswers(response.data.quiz.chosen_answers);
             console.log(response.data.quiz.questions[0]);
-            // setTechstack(techstack);
-            // setQty(qty);
-            // setDifficulty(difficulty);
-            // console.log(response.data.question);
-            // setOgResponse(response.data.question);
-            // console.log(response.data.question.question);
-            // setQs(response.data.question.question);
-            // if(response.data.question.code_snippet){
-            // console.log(response.data.question.code_snippet);
-            // setCodeQs(response.data.question.code_snippet);
-            // }
-            // else{
-            //     setCodeQs('');
-            // }
-            // console.log(response.data.question.options);
-            // setOptions(response.data.question.options);
-            // if(response.data.question.options_code){
-            // setOptionsCode(true);
-            // console.log(response.data.question.options_code);
-            // setOptions(response.data.question.options_code);
-            // }
-            // // setQuestions(content);
         } catch (error) {
             console.error('Error fetching questions:', error);
         }
@@ -126,7 +104,7 @@ const Results = () => {
                 </SyntaxHighlighter>
               )}
             </div>
-            <div className="options-container ">
+            <div className="options-container">
               {question.options_code ? 
                    (<>
                     <div key={index+"-Correct"} className="options flex items-center">
@@ -174,47 +152,6 @@ const Results = () => {
                   </>
                  )}
               </div>
-              {/* {options.map((option, index) => {
-                if (optionsCode) {
-                  return (
-                    <div key={index} className="options flex items-center">
-                      <input
-                        type="radio"
-                        id={index}
-                        name="options"
-                        value={option}
-                        className="mb-1.5 mr-4"
-                        onChange={() => handleOptionSelect(option)}
-                        checked={selectedAnswer === option}
-                      />
-                      <label htmlFor={index}>
-                        <SyntaxHighlighter
-                          language={techstack}
-                          style={github}
-                        >
-                          {option}
-                        </SyntaxHighlighter>
-                      </label>
-                    </div>
-                  );
-                } else {
-                  return (
-                    <div key={index} className="options font-semibold text-base">
-                      <input
-                        type="radio"
-                        id={index}
-                        name="options"
-                        value={option}
-                        className="mr-2"
-                        required
-                        onChange={() => handleOptionSelect(option)}
-                        checked={selectedAnswer === option}
-                      />
-                      <label htmlFor={index}>{option}</label>
-                    </div>
-                  );
-                }
-              })} */}
             </>
           )})}
           </div>

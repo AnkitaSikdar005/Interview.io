@@ -30,9 +30,9 @@ router.post('/generate-quiz', async (req, res) => {
     if (!difficulty) {
         actualDifficulty = "random";
     }
-    console.log("qsNo:", String(qsNo));
-    console.log("qty:", qty);
-    if (String(qsNo) > qty) {
+    console.log("qsNo:", qsNo);
+    console.log("qty:", (qty));
+    if ((qsNo) > qty) {
         console.log("No more questions");
         return res.json({ hasMoreQuestions: false });
     }
