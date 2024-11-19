@@ -12,9 +12,7 @@ This project has been made by all of our collaborators of **Team Codeblooded** &
 ## 🌟 Features
 
 - 💻 **Simulated Interview Environment** : The platform provides a **real-time** or **peer-to-peer** interview experience, allowing users to practice in a lifelike scenario using their webcam and microphone. This helps users develop time management skills and offers a flexible and convenient.
-
-- 📚 **AI-Based Question Bank and Guide**: A rich **AI-Based question bank** is available, tailored to the user's experience level and any role requirements. The system uses adaptive difficulty, meaning it generates increasingly complex questions as the user improves, ensuring that users are consistently challenged and can tackle more difficult interview scenarios.
-
+  
 - 🤔 **Quiz Section:** The quiz system generates **dynamic questions** based on the user's inputs, **covering any domain**. The adaptive difficulty feature adjusts the complexity of questions in real-time, making it suitable for users at different experience levels.
 
 - ❓ **AI-Based Q&A Section**: In this section, users receive **AI-Based real-time, context-specific interview questions** based on their skill level. The AI adjusts the difficulty based on the quality of the user’s responses, ensuring a personalized learning experience.
@@ -125,8 +123,12 @@ This project has been made by all of our collaborators of **Team Codeblooded** &
 - `POST /api/v1/quiz/terminate-quiz`: Terminate a quiz session
 - `POST /api/v1/questions/generate-questions`: Generate questions for a quiz
 - `POST /api/v1/questions/chat`: Interact with AI chatbot
-
-
+  
+## 😎 Members of our Team Codeblooded 👥
+- **Abhrajit Gupta** - [@abhrajitgupta](https://github.com/abhrajit2004)
+- **Shuvadipta Das** - [@shuvadiptadas](https://github.com/5h0ov)
+- **Ankita Sikdar**  - [@ankitasikdar](https://github.com/AnkitaSikdar005)
+- **Megha Karmakar** - [@meghakarmakar](https://github.com/meghakarmakar)
 ## 🤝 Contributing
 
 We welcome contributions to this project! Please feel free to submit issues, fork the repository and send pull requests!
