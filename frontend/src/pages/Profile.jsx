@@ -76,12 +76,13 @@ const Profile = () => {
   const changeAvatar = async (e) => {
     e.preventDefault();
     setIsUploading(true);
+    const toastId = toast.info("Uploading...", { autoClose: false });
+
     try {
       // get file
       const file = e.target.files[0];
       let formData = new FormData();
       formData.append("avatar", file);
-      const toastId = toast.info("Uploading...", { autoClose: false });
       // upload to cloudinary
       const res = await axios.post(`${API_URL}/api/v1/auth/updateAvatar`, formData, {
         headers: {
@@ -101,6 +102,7 @@ const Profile = () => {
       user.avatar = res.data.url;
       setAvatar(res.data.url);
     } catch (err) {
+      toast.dismiss(toastId); 
       toast.error(err.response.data.msg)
       setIsUploading(false);
     }
