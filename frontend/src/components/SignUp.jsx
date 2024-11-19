@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useStore } from "../store/store.js";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { Tooltip } from 'react-tooltip';
 
 function SignUpForm() {
     const [name, setName] = useState("");
@@ -10,6 +12,7 @@ function SignUpForm() {
     const { signup } = useStore();
     const navigate = useNavigate();
     const [isSigningUp, setIsSigningUp] = useState(false);
+    const [showPassword, setShowPassword] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -34,6 +37,7 @@ function SignUpForm() {
           type="text"
           name="name"
           value={name}
+          required
           onChange={(e) => setName(e.target.value)}
           placeholder="Name"
         />
@@ -41,17 +45,37 @@ function SignUpForm() {
           type="email"
           name="email"
           value={email}
+          required
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Email"
         />
-        <input
-          type="password"
-          name="password"
-          minLength={6}
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="••••••••"
-        />
+        <div className="relative">
+          <input
+            type={showPassword ? "text" : "password"}
+            name="password"
+            placeholder="••••••••"
+            required
+            minLength={6}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button 
+            type="button"
+            id='password-toggle'
+            aria-label='Toggle Password Visibility'
+            className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700"
+            onMouseDown={() => setShowPassword(true)}
+            onMouseUp={() => setShowPassword(false)}
+            onMouseLeave={() => setShowPassword(false)}
+            onTouchStart={() => setShowPassword(true)}
+            onTouchEnd={() => setShowPassword(false)}
+          >
+            {showPassword ? <FaEyeSlash size={24} /> : <FaEye size={24} />}
+          </button>
+          <Tooltip anchorSelect='#password-toggle' place='right' effect='solid' type='dark'>
+            {showPassword ? 'Hide Password' : 'Show Password'}
+          </Tooltip>
+        </div>
         <div className="role-selection flex flex-row p-2">
           <label>
             <input
