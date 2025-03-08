@@ -36,10 +36,10 @@ router.post('/generate-quiz', async (req, res) => {
         console.log("No more questions");
         return res.json({ hasMoreQuestions: false });
     }
-``
+
 
     const genAI = new GoogleGenerativeAI(ENV_VARS.GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-lite" });
 
     const prompt = `You are a Interview Quiz Question Generator. Generate 1 MCQ interview questions(give code snippets if necessary for the question asked) with answers for topic: ${techstack} in ${actualDifficulty} level difficulty. 
     give your response in json format as follows:
