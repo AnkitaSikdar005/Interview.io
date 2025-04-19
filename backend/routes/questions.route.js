@@ -10,7 +10,7 @@ router.post('/chat', async (req, res) => {
     console.log("user prompt: "+message);
     
     const genAI = new GoogleGenerativeAI(ENV_VARS.GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" }); 
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-lite" }); 
 
     // const prompt = `You are a chatbot. Reply to this: ${message}`;
     
@@ -29,7 +29,7 @@ router.post('/chat', async (req, res) => {
 router.post('/generate-questions', async (req, res) => {
     const { techstack, qty, difficulty, id } = req.body;
     const genAI = new GoogleGenerativeAI(ENV_VARS.GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-lite" });
     let actualDifficulty = difficulty;
     if(!qty){
         res.status(400).json({ error: 'Quantity of questions is required' });
